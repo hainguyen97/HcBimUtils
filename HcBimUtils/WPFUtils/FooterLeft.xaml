@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="HcBimUtils.WPFUtils.FooterLeft"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d">
+
+
+    <StackPanel HorizontalAlignment="Left"
+                MaxHeight="55"
+                Orientation="Horizontal">
+
+
+        <Button Background="Transparent"
+                BorderThickness="0"
+                Name="BtnHomePage"
+                Click="BtnHomePage_OnClick">
+            <Image VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Margin="2"
+                   ToolTip="Mở trang chủ"
+                   Stretch="Uniform"
+                    />
+        </Button>
+
+        <Button Background="Transparent"
+                BorderThickness="0"
+                Name="BtnFeedBack"
+                Click="BtnFeedBack_OnClick">
+            <Image VerticalAlignment="Center"
+                   Margin="10 6"
+                   HorizontalAlignment="Left"
+                   ToolTip="Góp ý"
+                   Stretch="Uniform"
+                   Source="/HcBimUtils;component/WPFUtils/feedback.png" />
+        </Button>
+
+        <Button Background="Transparent"
+                BorderThickness="0"
+                Name="BtnYoutube"
+                Click="BtnYoutube_OnClick">
+            <Image VerticalAlignment="Center"
+                   Margin="10 6"
+                   ToolTip="Xem video hướng dẫn"
+                   HorizontalAlignment="Left"
+                   Stretch="Uniform"
+                   Source="/HcBimUtils;component/WPFUtils/youtube.png" />
+        </Button>
+
+
+
+    </StackPanel>
+</UserControl>

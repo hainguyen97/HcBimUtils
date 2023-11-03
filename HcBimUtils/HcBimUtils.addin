@@ -1,0 +1,10 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>HcBimUtils</Name>
+        <Assembly>HcBimUtils/HcBimUtils.dll</Assembly>
+        <AddInId>EBB82089-D8FB-4F60-9ADD-2FBBF5F574E1</AddInId>
+        <FullClassName>HcBimUtils.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+    </AddIn>
+</RevitAddIns>
