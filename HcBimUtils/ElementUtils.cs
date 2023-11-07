@@ -97,6 +97,15 @@ namespace HcBimUtils
             return element.Id.IntegerValue;
         }
 
+        public static long GetId(this Element element)
+        {
+#if R24_OR_GREATER
+            return element.Id.Value;
+#else
+            return element.Id.IntegerValue;
+#endif
+        }
+
         public static XYZ GetCentroid(this Element element, View view)
         {
             XYZ result = null;
