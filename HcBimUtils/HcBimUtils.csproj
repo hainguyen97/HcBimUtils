@@ -54,7 +54,7 @@
         <Version>$(ReleaseVersion)</Version>
         <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    </PropertyGroup>        
+    </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="Nice3point.Revit.Toolkit" Version="$(RevitVersion).*" />
@@ -72,9 +72,5 @@
         <Using Include="Nice3point.Revit.Extensions" />
         <Using Include="Nice3point.Revit.Toolkit.Utils" />
         <Using Include="JetBrains.Annotations" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Resources\" />
     </ItemGroup>                
 </Project>

@@ -1,4 +1,5 @@
 ﻿using HcBimUtils.Commands;
+using HcBimUtils.RibbonUtils;
 using Nice3point.Revit.Toolkit.External;
 
 namespace HcBimUtils
@@ -15,7 +16,7 @@ namespace HcBimUtils
         {
             var panel = Application.CreatePanel("Commands", "HcBimUtils");
 
-            var showButton = panel.AddPushButton<Command>("Execute");
+            var showButton = panel.AddPushButton<Command>();
             showButton.SetImage("/HcBimUtils;component/Resources/Icons/RibbonIcon16.png");
             showButton.SetLargeImage("/HcBimUtils;component/Resources/Icons/RibbonIcon32.png");
         }

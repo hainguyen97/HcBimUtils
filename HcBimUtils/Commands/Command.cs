@@ -6,6 +6,7 @@ namespace HcBimUtils.Commands
 {
     [UsedImplicitly]
     [Transaction(TransactionMode.Manual)]
+    [Command]
     public class Command : ExternalCommand
     {
         public override void Execute()
