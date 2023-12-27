@@ -222,6 +222,19 @@ namespace HcBimUtils.RebarUtils
                 }
             }
         }
+
+        public static void SetSolidRebarIn3DView(View view, Rebar rebar)
+        {
+            if (rebar == null) return;
+
+            if (view is View3D view3D)
+            {
+#if R20 || R21 || R22
+                rebar.SetSolidInView(view3D, true);
+#endif
+            }
+        }
+
         public static List<Rebar> GetAllRebarsInHost(this Element host)
         {
             List<Rebar> rebars = new List<Rebar>();
