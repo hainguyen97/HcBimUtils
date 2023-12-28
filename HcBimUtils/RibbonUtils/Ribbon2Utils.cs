@@ -9,8 +9,7 @@ namespace HcBimUtils.RibbonUtils
         public static PushButton AddPushButton<TCommand>(this RibbonPanel panel) where TCommand : IExternalCommand
         {
             var type = typeof(TCommand);
-            var commandClass = typeof(Command);
-            var attrs = Attribute.GetCustomAttributes(commandClass);
+            var attrs = Attribute.GetCustomAttributes(type);
             var buttonText = type.FullName;
             var buttonLargeImage = "";
             var buttonImage = "";

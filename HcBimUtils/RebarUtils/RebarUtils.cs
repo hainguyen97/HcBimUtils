@@ -223,7 +223,7 @@ namespace HcBimUtils.RebarUtils
             }
         }
 
-        public static void SetSolidRebarIn3DView(View view, Rebar rebar)
+        public static void SetSolidRebarIn3DView(this Rebar rebar, View view)
         {
             if (rebar == null) return;
 
